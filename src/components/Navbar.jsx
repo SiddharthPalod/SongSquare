@@ -105,13 +105,26 @@ function Navbar() {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
-        <button type="submit" style={{ cursor: "pointer" }}>
+        <div style={{ cursor: "pointer" }}
+          onClick={() => {
+            const originalXOffset = window.scrollX;
+            for (const key in state) {
+              if (key == "searchon") {
+                state[key] = true;
+              } else {
+                state[key] = false;
+              }
+            }
+            window.scrollTo(originalXOffset, 0);
+          }}
+        
+        >
           <Icon
             icon="ic:outline-search"
             color="#FF3179"
             style={{ scale: "2", marginRight: "2%" }}
           />
-        </button>
+        </div>
       </div>
       <div className="w-1/5" />
       <div

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar } from './components'
-import { Homepg, Author, Album } from './pages'
+import { Homepg, Author, Album, SearchRes } from './pages'
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Homepg/>
       <Author/>
       <Album/>
+      <SearchRes/>
     </div>
   )
 }

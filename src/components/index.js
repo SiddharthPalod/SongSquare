@@ -12,6 +12,7 @@ const state = proxy({
     playlist: false,
     user: false,
     artist: false,
+    searchon: false,
 });
 
 export {Navbar , state,
