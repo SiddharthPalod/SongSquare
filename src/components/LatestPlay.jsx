@@ -23,7 +23,7 @@ function LatestPlay() {
 
         </div>
 
-        <div className='absolute font-gothic text-9xl uppercase right-20'>
+        <div className='absolute font-gothic text-9xl uppercase right-20 backdrop-blur-[5px] rounder-2xl'>
         Latest <br/>Release
         </div>
 

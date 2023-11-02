@@ -14,10 +14,10 @@ const ArtistMusic = ({ title, description, image, imagelink }) => {
             scale: 1,
             speed: 500,
           }}
-          className='p-3 pl-5 pr-5 sm:w-[360px] w-full bg-[#5C1D6B] text-white hover:border-4 border-ipink' //added responsive box
+          className='p-3 px-5  sm:w-[360px] w-full bg-[#5C1D6B] text-white hover:border-4 border-ipink' //added responsive box
         >
 
-            <div className='relative w-full h-[230px] mt-5'>
+            <div className='relative w-full h-[250px] mt-5'>
               <div className='h-full bg-cover'>
                   <img
                       src={image}

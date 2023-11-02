@@ -5,10 +5,11 @@ import PopularPlay from "./PopularPlay";
 import Navbar from "./Navbar"
 import {proxy} from "valtio"
 import ArtistMusic from "./ArtistMusic";
+import MusicPlayer from "./MusicPlayer";
 
 const state = proxy({
     home: true,
-    music: false,
+    music: true,
     playlist: false,
     user: false,
     artist: false,
@@ -18,5 +19,5 @@ const state = proxy({
 export {Navbar , state,
     Home1,Home2,
     LatestPlay,PopularPlay,
-    ArtistMusic,
+    ArtistMusic,MusicPlayer,
 };

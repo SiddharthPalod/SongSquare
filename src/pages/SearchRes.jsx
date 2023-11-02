@@ -37,7 +37,7 @@ function SearchRes() {
         <div className='text-5xl font-gothic px-10 py-5'> You might also like: </div>
 {/* here add list from the popular page */}
 
-        <div className='bg-ipurple mx-10 my-5 flex flex-row justify-evenly p-5'>
+        <div className='bg-ipurple mx-10 my-5 flex flex-row justify-evenly p-5 mb-5'>
 
         {artist_songs.map((article, index) => (
         <ArtistMusic

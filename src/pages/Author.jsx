@@ -46,7 +46,7 @@ function Author() {
         <div>
             <div className='absolute translate-x-[-40%] translate-y-[-20%] top-[50%] left-[50%] z-30'>
             <svg width="400" height="400" viewBox="0 0 836 836" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M227.648 822.6L9.88036 9.88035L822.6 227.648L227.648 822.6Z" fill="#B41EB2" fill-opacity="0.33" stroke="#5C1D6B" stroke-width="13"/>
+            <path d="M227.648 822.6L9.88036 9.88035L822.6 227.648L227.648 822.6Z" fill="#B41EB2" fill-opacity="0.15" stroke="#5C1D6B" stroke-width="13"/>
             </svg>
             </div>
             <div className='avatar flex justify-center '>        
@@ -56,7 +56,7 @@ function Author() {
             </div>
         </div>
         
-        <div className='w-1/3 absolute top-1/2 ml-10'>
+        <div className='w-1/34 absolute top-1/2 ml-10 border-2 border-ipink rounded-2xl py-10 px-3'>
             <h1 className='text-4xl font-bold capitalize'>MEET RAMAIYA CHAN</h1> 
             <h1 className='text-2xl'>Former President of UN</h1>
             <p>Aiming to change world with new technologies</p>
@@ -65,7 +65,7 @@ function Author() {
 
     </div>
     
-    <div className='mx-5 mt-10 flex flex-wrap gap-7 justify-center bg-ipink p-4'>
+    <div className='mx-5 mt-10 flex flex-wrap gap-7 justify-center bg-ipink p-4 mb-5'>
       {artist_songs.map((article, index) => (
         <ArtistMusic
           key={`article-${index}`}

@@ -1,15 +1,16 @@
 import React from 'react'
-import { Navbar } from './components'
+import { MusicPlayer, Navbar } from './components'
 import { Homepg, Author, Album, SearchRes } from './pages'
 
 function App() {
   return (
     <div>
       <Navbar/>
-      <Homepg/>
+      {/* <Homepg/>
       <Author/>
       <Album/>
-      <SearchRes/>
+      <SearchRes/> */}
+      <MusicPlayer/>
     </div>
   )
 }

@@ -21,7 +21,7 @@ function Home2() {
 
     <div className='h-screen flex flex-row align-middle'>
         <div 
-            className='max-md:hidden -z-50'
+            className='max-md:hidden -z-50 translate-x-[-1.9rem]'
         >
         
         <svg width="882" height="798" viewBox="0 0 882 798" fill="none" xmlns="http://www.w3.org/2000/svg">
