@@ -1,7 +1,7 @@
 import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useSnapshot } from 'valtio';
-import { LatestPlay, PopularPlay, state } from '../components'
+import { state,LatestPlay,PopularPlay } from '../components'
 
 function Album() {
     const snap = useSnapshot(state);
@@ -17,8 +17,10 @@ function Album() {
               transition={{ duration: 0.2 ,ease:'easeInOut'}} >
 
         <div>
-            Happy holi
             <LatestPlay/>
+            <div className='absolute translate-y-[-50%] translate-x-[-20%] font-gothic text-9xl uppercase left-1/2'> 
+                Popular<br/>Songs
+            </div>
             <PopularPlay/>
         </div>
 

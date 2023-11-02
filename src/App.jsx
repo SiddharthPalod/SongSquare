@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar } from './components'
-import { Homepg, Author } from './pages'
+import { Homepg, Author, Album } from './pages'
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Navbar/>
       <Homepg/>
       <Author/>
+      <Album/>
     </div>
   )
 }

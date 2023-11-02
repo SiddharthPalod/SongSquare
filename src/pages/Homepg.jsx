@@ -18,21 +18,7 @@ function Homepg() {
 
     <div className='overflow-hidden'>
         <Home1/>
-        
-        <motion.div className='mark bg-dark text-5xl uppercase p-3 font-bold overflow-hidden'> 
-            <h1>
-            Power ful people <span> have a way with words </span> 
-            </h1>
-            <h1>
-            Wonderful people
-             <span> have a way with life </span> 
-            </h1>
-            <h1>
-            Wonderful people
-             <span> have a way with life </span> 
-            </h1>      
-        </motion.div>
-        
+                
         <Home2/>
     </div>
 </motion.div>)}
