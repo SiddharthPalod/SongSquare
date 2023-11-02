@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #FFFFFF;
+  background-color: #323232;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.mark{
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  overflow: hidden;
+}
+
+.mark>h1{
+  animation: marquee 12s linear infinite;
+}
+
+.mark> h1> span{
+  -webkit-text-stroke: 1px #FFFFFF;
+  color: transparent;
+}
+
+@keyframes marquee{
+  0%{
+      transform: translateX(0%);
+  }
+  100%{
+      transform: translateX(-100%);
+  }
+}
