@@ -11,6 +11,10 @@ export default {
         'ipink' : '#FF3179',
         'ipurple' : '#B41EB2',
       },
+
+      fontFamily: {
+        'gothic' : ['League Gothic'],        
+      }
     }
   },
 
