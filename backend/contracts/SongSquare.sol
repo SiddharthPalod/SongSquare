@@ -2,7 +2,7 @@
 pragma solidity ^0.8.21;
 
 contract SongSquare{
-    uint256 songCount = 0;
+    uint256 public songCount= 0;
     
     struct Song{
         uint id;
