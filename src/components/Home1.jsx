@@ -13,12 +13,12 @@ function Home1() {
 
         </div>
 
-        <div className='bg-ipink w-1/3 h-2/4 rounded-2xl absolute right-10 top-1/4 p-5'>
+        <div className='bg-ipink w-1/3 h-1/2 rounded-2xl absolute right-10 top-1/4 p-5 max-md:w-[80%]'>
             <img src='xyz' alt='img-not-found'/>
             <h1> Rohan is mad at you</h1>
         </div>
 
-        <div className='bg-transparent w-1/3 rounded-2xl border-ipink border-2 p-2 absolute right-10 top-3/4 mt-3'>
+        <div className='bg-transparent w-1/3 rounded-2xl border-ipink border-2 p-2 absolute right-10 top-3/4 mt-3 max-md:w-[80%]'>
             hellow
         </div>
 

@@ -6,11 +6,11 @@ function App() {
   return (
     <div>
       <Navbar/>
-      {/* <Homepg/>
+      <Homepg/>
       <Author/>
       <Album/>
-      <SearchRes/> */}
-      <MusicPlayer/>
+      <SearchRes/>
+      {/* <MusicPlayer/> */}
     </div>
   )
 }

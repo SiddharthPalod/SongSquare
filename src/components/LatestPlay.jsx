@@ -4,7 +4,7 @@ function LatestPlay() {
   return (
     <div className='flex flex-row justify-evenly items-center'>
 
-        <div className='w-1/3 text-white flex flex-col items-center'>
+        <div className='w-1/3 text-white flex flex-col items-center max-md:m-10 max-md:w-[80%]'>
             <div className=' w-full h-64 bg-ipink rounded-2xl p-4'>
                 dssdds
             </div>
@@ -23,7 +23,7 @@ function LatestPlay() {
 
         </div>
 
-        <div className='absolute font-gothic text-9xl uppercase right-20 backdrop-blur-[5px] rounder-2xl'>
+        <div className='absolute font-gothic text-9xl uppercase right-20 backdrop-blur-[5px] rounder-2xl max-md:hidden'>
         Latest <br/>Release
         </div>
 

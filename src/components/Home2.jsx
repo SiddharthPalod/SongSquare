@@ -3,25 +3,12 @@ import { motion } from 'framer-motion'
 
 function Home2() {
   return (
-    <div>
+    <div className='z-60'>
 
-      <motion.div className='mark bg-dark text-5xl uppercase p-3 font-bold overflow-hidden h-[20%] z-20 translate-y-20'> 
-            <h1>
-            Power ful people <span> have a way with words </span> 
-            </h1>
-            <h1>
-            Wonderful people
-             <span> have a way with life </span> 
-            </h1>
-            <h1>
-            Wonderful people
-             <span> have a way with life </span> 
-            </h1>      
-        </motion.div>
 
     <div className='h-screen flex flex-row align-middle'>
         <div 
-            className='max-md:hidden -z-50 translate-x-[-1.9rem]'
+            className='max-md:hidden'
         >
         
         <svg width="882" height="798" viewBox="0 0 882 798" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +18,7 @@ function Home2() {
         
         </div>
 
-        <div className='bg-ipurple w-1/4 h-3/4 rounded-2xl mt-5 p-5 absolute left-2/3 translate-y-20'>
+        <div className='bg-ipurple w-1/4 h-3/4 rounded-2xl mt-5 p-5 absolute right-10 translate-y-20 max-md:w-[80%]'>
             <img src='xyz' alt='img-not-found'/>
             <h1> Rohan is mad at you</h1>
         </div>

@@ -18,7 +18,7 @@ function Album() {
 
         <div>
             <LatestPlay/>
-            <div className='absolute translate-y-[-50%] translate-x-[-20%] font-gothic text-9xl uppercase left-1/2 backdrop-blur-[5px] rounder-2xl'> 
+            <div className='absolute translate-y-[-50%] translate-x-[-20%] font-gothic text-9xl uppercase left-1/2 backdrop-blur-[5px] rounder-2xl max-md:hidden'> 
                 Popular<br/>Songs
             </div>
             <PopularPlay/>
