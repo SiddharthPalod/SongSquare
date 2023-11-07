@@ -56,7 +56,7 @@ function Author() {
           </div>
         </div>
         
-        <div className='w-1/34 absolute top-1/2 ml-10 border-2 border-ipink rounded-2xl py-10 px-3 max-md:w-[80%]'>
+        <div className='w-1/34 absolute top-1/2 ml-10 border-2 border-ipink rounded-2xl py-10 px-3 max-md:w-[80%] max-md:relative max-md:top-0 max-md:my-5'>
             <h1 className='text-4xl font-bold capitalize'>MEET RAMAIYA CHAN</h1> 
             <h1 className='text-2xl'>Former President of UN</h1>
             <p>Aiming to change world with new technologies</p>
