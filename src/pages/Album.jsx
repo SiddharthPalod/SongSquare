@@ -2,6 +2,7 @@ import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useSnapshot } from 'valtio';
 import { state,LatestPlay,PopularPlay } from '../components'
+import { px3 } from '../assets';
 
 function Album() {
     const snap = useSnapshot(state);
@@ -18,9 +19,10 @@ function Album() {
 
         <div>
             <LatestPlay/>
-            <div className='absolute translate-y-[-50%] translate-x-[-20%] font-gothic text-9xl uppercase left-1/2 backdrop-blur-[5px] rounder-2xl max-md:hidden'> 
+            <div className='absolute translate-y-[-50%] translate-x-[-20%] font-gothic text-9xl uppercase left-1/2 backdrop-blur-[5px] rounder-2xl max-md:hidden z-20'> 
                 Popular<br/>Songs
             </div>
+            <img className='absolute mix-blend-luminosity translate-y-[-50%] right-0 max-md:hidden' src={px3} alt="React Logo" />
             <PopularPlay/>
         </div>
 

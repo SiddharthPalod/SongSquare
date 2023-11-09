@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
+import { home2 } from '../assets'
 function Home2() {
   return (
     <div className='z-60'>
@@ -10,9 +10,9 @@ function Home2() {
         <div 
             className='max-md:hidden'
         >
-        
+        <img className='absolute mix-blend-luminosity h-full' src={home2} alt="React Logo" />
         <svg width="882" height="798" viewBox="0 0 882 798" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M319.618 798L0 244.406V0H421.275L882 798L319.618 798Z" fill="#B41EB2"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M319.618 798L0 244.406V0H421.275L882 798L319.618 798Z" fill="#B41EB2"/>
         </svg>
 
         
