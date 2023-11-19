@@ -8,7 +8,7 @@ function Home1() {
         >
         
         <svg width="806" height="689" viewBox="0 0 806 689" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 458.49L264.709 0H805.552L407.758 689H0V458.49Z" fill="#FF3179"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M0 458.49L264.709 0H805.552L407.758 689H0V458.49Z" fill="#FF3179"/>
         </svg>
 
         </div>

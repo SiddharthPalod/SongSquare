@@ -25,7 +25,7 @@ function Home2() {
         >
         
         <svg width="882" height="798" viewBox="0 0 882 798" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M319.618 798L0 244.406V0H421.275L882 798L319.618 798Z" fill="#B41EB2"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M319.618 798L0 244.406V0H421.275L882 798L319.618 798Z" fill="#B41EB2"/>
         </svg>
 
         
