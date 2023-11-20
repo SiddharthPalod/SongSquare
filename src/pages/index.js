@@ -1,7 +1,7 @@
 import Album from "./Album";
-import Author from "./Author";
+import { Author , songs} from "./Author";
 import Homepg from "./Homepg";
 import SearchRes from "./SearchRes";
 
-export {Homepg, Author, Album, SearchRes,
+export {Homepg, Author, Album, SearchRes, songs
 };
