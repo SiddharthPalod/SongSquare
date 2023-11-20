@@ -13,13 +13,28 @@ function Homepg() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 ,ease:'easeInOut'}} >
+              transition={{ duration: 0.2 ,ease:'easeInOut'}} 
+              >
 
 
     <div className='overflow-hidden'>
         <Home1/>
-                
+
+        <div className='mark bg-dark absolute text-5xl uppercase p-3 font-bold overflow-hidden'> 
+            <h1>
+            Power ful people <span> have a way with words </span> 
+            </h1>
+            <h1>
+            Wonderful people
+             <span> have a way with life </span> 
+            </h1>
+            <h1>
+            Wonderful people
+             <span> have a way with life </span> 
+            </h1>      
+        </div>
         <Home2/>
+
     </div>
 </motion.div>)}
 </AnimatePresence>

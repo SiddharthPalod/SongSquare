@@ -17,6 +17,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.html {
+  scroll-behavior:smooth;
+}
+
+/* Homepg- marquee animation */
 .mark{
   width: 100%;
   white-space: nowrap;
@@ -42,3 +47,7 @@
   }
 }
 
+.homeImg{
+  transform: translateX(0);
+  transition: transform 0.2s ease;
+}

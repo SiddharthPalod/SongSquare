@@ -19,13 +19,13 @@ function Author() {
               transition={{ duration: 0.2 ,ease:'easeInOut'}} >
 
     <div className='h-screen'>
-        <div className='flex flex-row justify-center p-4 mt-10 mb-10 text-dark font-bold'>
+        <div className='flex flex-row justify-center p-4 my-10 text-dark font-bold max-md:my-0'>
         {snap.user &&(
         <>
-        <div className='box p-4 bg-ipink w-1/3 mr-5 rounded-2xl'>
+        <div className='box p-4 bg-ipink w-1/3 mr-5 rounded-2xl max-md:w-2/3 max-md:p-2'>
             ADD YOUR FILE HERE  {/* Add Music file */}
         </div>
-        <div className='box p-4 text-center bg-ipink w-1/5 rounded-2xl'>
+        <div className='box p-4 text-center bg-ipink w-1/5 rounded-2xl max-md:w-1/3 max-md:p-2 '>
             Add Song           {/* Add music */}
         </div> 
         </>
@@ -33,7 +33,7 @@ function Author() {
 
         {snap.artist &&(     
         <>
-        <div className='box p-4 text-center items-center flex justify-center space-x-3 bg-ipink w-1/5 rounded-2xl'>
+        <div className='max-md:w-1/2 box p-4 text-center items-center flex justify-center space-x-3 bg-ipink w-1/5 rounded-2xl'>
             <Icon icon="la:donate" style={{scale:"2"}} />
             <b> Tip Artist </b>  {/* Give TIP */}
         </div> 
@@ -44,19 +44,19 @@ function Author() {
         </div>
 
         <div>
-            <div className='absolute translate-x-[-40%] translate-y-[-20%] top-[50%] left-[50%] z-30'>
+          <div className='absolute translate-x-[-40%] translate-y-[-20%] top-[50%] left-[50%] z-30 max-md:hidden'>
             <svg width="400" height="400" viewBox="0 0 836 836" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M227.648 822.6L9.88036 9.88035L822.6 227.648L227.648 822.6Z" fill="#B41EB2" fill-opacity="0.15" stroke="#5C1D6B" stroke-width="13"/>
             </svg>
-            </div>
-            <div className='avatar flex justify-center '>        
-                <div className="w-1/4 rounded-full border-8 border-ipink">
+          </div>
+          <div className='avatar flex justify-center '>        
+                <div className="w-1/4 rounded-full border-8 border-ipink max-md:w-1/2">
                     <img src="https://plus.unsplash.com/premium_photo-1666265384842-31bdda25f026?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D" />
                 </div>
-            </div>
+          </div>
         </div>
         
-        <div className='w-1/34 absolute top-1/2 ml-10 border-2 border-ipink rounded-2xl py-10 px-3'>
+        <div className='w-1/34 absolute top-1/2 ml-10 border-2 border-ipink rounded-2xl py-10 px-3 max-md:w-[80%] max-md:relative max-md:top-0 max-md:my-5'>
             <h1 className='text-4xl font-bold capitalize'>MEET RAMAIYA CHAN</h1> 
             <h1 className='text-2xl'>Former President of UN</h1>
             <p>Aiming to change world with new technologies</p>

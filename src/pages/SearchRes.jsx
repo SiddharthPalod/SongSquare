@@ -18,9 +18,9 @@ function SearchRes() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 ,ease:'easeInOut'}} >
 
-        <div className='text-8xl font-gothic p-10'> Search results for XYZ</div>
 
-        <div className='bg-ipink mx-10 my-5 flex flex-row justify-evenly p-5'>
+        <div className='text-8xl font-gothic p-10 max-md:text-5xl max-md:pb-0'> Search results for XYZ</div>
+        <div className='bg-ipink mx-10 my-5 flex flex-row justify-evenly p-5 max-md:flex-col'>
 
         {artist_songs.map((article, index) => (
         <ArtistMusic
@@ -37,7 +37,7 @@ function SearchRes() {
         <div className='text-5xl font-gothic px-10 py-5'> You might also like: </div>
 {/* here add list from the popular page */}
 
-        <div className='bg-ipurple mx-10 my-5 flex flex-row justify-evenly p-5 mb-5'>
+        <div className='bg-ipurple mx-10 my-5 flex flex-row justify-evenly p-5 mb-5 max-md:flex-col'>
 
         {artist_songs.map((article, index) => (
         <ArtistMusic
