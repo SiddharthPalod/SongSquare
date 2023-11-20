@@ -3,6 +3,8 @@ import { state } from '.';
 import { Icon } from "@iconify/react";
 import { AnimatePresence, motion } from 'framer-motion'
 import { useSnapshot } from 'valtio';
+import { songs } from '../pages';
+
 
 
 function MusicPlayer() {
@@ -12,6 +14,10 @@ function MusicPlayer() {
     const handleIconClick = () => {
       setIsFirstIconVisible(!isFirstIconVisible);
     };
+
+    const playSong = () => {
+        return songs[0];
+    }
 
   return (
     <AnimatePresence>
@@ -37,12 +43,13 @@ function MusicPlayer() {
             className='rounded-2xl border-4 border-dark'/>
             </div>
             
-            <div className='audio-player rounded-2xl flex flex-col items-center max-md:scale-75'>
+            {/* <div className='audio-player rounded-2xl flex flex-col items-center max-md:scale-75'>
                 <div className='flex flex-row space-x-10 py-2'>
                 <Icon icon="iconamoon:player-end-fill" color="#323232" rotate={2} style={{scale:"2"}} />
 
                 {isFirstIconVisible ? (
-                    <Icon icon="octicon:play-16" color="#323232"  onClick={handleIconClick} style={{scale:"2"}} />
+                    <Icon icon="octicon:play-16" color="#323232" onClick={handleIconClick} style={{ scale: "2" }} />
+
                 ) : (
                     <Icon icon="zondicons:pause-outline" color="#323232"  onClick={handleIconClick} style={{scale:"2"}} />)
                 }
@@ -57,7 +64,9 @@ function MusicPlayer() {
                     </div>
                     <h1>10:00</h1>
                 </div>
-            </div>
+            </div> */}
+                      
+            <audio id='audio' src={playSong()} controls></audio>
 
             
             <div className='flex flex-row space-x-10 max-md:scale-50'>
