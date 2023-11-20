@@ -1,12 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useSnapshot } from 'valtio';
 import { ArtistMusic, state } from '../components';
 import { Icon } from '@iconify/react';
 import { artist_songs } from './data';
 
+// add to blockchain
+let songs = [];
+
 function Author() {
     const snap = useSnapshot(state);
+    
+  
+  const [text,setText] = useState("ADD YOUR FILE HERE")
+  const [str, setStr] = useState("");
+  const handleFileChange = async (event) => {
+    const selectedFile = event.target.files[0];
+    if (selectedFile) {
+      setText(selectedFile.name);
+      const result = await audioToBase64(selectedFile);
+      setStr(result);
+    }
+  }
+  
+  const handleButtonClick = () => {
+    songs.push(str);
+    setText("ADD YOUR FILE HERE")
+    alert("Music added successfully");
+    console.log(songs)
+  }
+
+
+  async function audioToBase64(audioFile) {
+    return new Promise((resolve, reject) => {
+      let reader = new FileReader();
+      reader.onerror = reject;
+      reader.onload = (e) => resolve(e.target.result);
+      reader.readAsDataURL(audioFile);
+    });
+  }
 
   return (
     <AnimatePresence>
@@ -22,12 +54,22 @@ function Author() {
         <div className='flex flex-row justify-center p-4 my-10 text-dark font-bold max-md:my-0'>
         {snap.user &&(
         <>
-        <div className='box p-4 bg-ipink w-1/3 mr-5 rounded-2xl max-md:w-2/3 max-md:p-2'>
-            ADD YOUR FILE HERE  {/* Add Music file */}
-        </div>
-        <div className='box p-4 text-center bg-ipink w-1/5 rounded-2xl max-md:w-1/3 max-md:p-2 '>
-            Add Song           {/* Add music */}
-        </div> 
+        <label htmlFor="fileInput" className="box p-4 bg-ipink w-1/3 mr-5 rounded-2xl max-md:w-2/3 max-md:p-2">
+                    { text }
+          <input
+            type="file"
+            id="fileInput"
+            accept="audio/mp3"
+            style={{ display: 'none' }} // Hide the default file input
+            onChange={(e) => handleFileChange(e)} // Add an onChange handler if needed
+          />
+        </label>
+                      
+                  <button className='box p-4 text-center bg-ipink w-1/5 rounded-2xl max-md:w-1/3 max-md:p-2 '
+                  onClick={handleButtonClick}>
+          Add Music
+            {/* Add music */}
+        </button> 
         </>
         )}
 
@@ -82,4 +124,4 @@ function Author() {
   )
 }
 
-export default Author
+export { Author , songs}
